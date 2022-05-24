@@ -13005,6 +13005,32 @@ name = string.gsub(name,"جسر","ر ج س")
 return LuaTele.sendText(msg_chat_id,msg_id,"⋆ اسرع واحد يرتبها ~ {"..name.."}","md",true)  
 end
 end
+if text == "تعطيل سمسمي" or text == "تعطيل سمسم" then
+if not msg.Admin then
+LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+end
+Redis:del(Fast.."smsm"..msg_chat_id)
+LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تعطيل امر سمسمي * ',"md",true)  
+end
+if text == "تفعيل سمسم" or text == "تفعيل سمسمي" then
+if not msg.Admin then
+LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+end
+Redis:set(Fast.."smsm"..msg_chat_id,"off")
+LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تفعيل امر سمسمي * ',"md",true)  
+end
+if text then
+if Redis:get(Fast.."smsm"..msg_chat_id) == "off" then
+if tonumber(msg.reply_to_message_id) ~= 0 then
+msg_user_id = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id).sender.user_id
+if tonumber(msg_user_id) == tonumber(Revor) then  
+u,res = https.request("https://xxxxrevor.ml/api/Simsmy.php?text="..text)
+JsonSInfo = JSON.decode(u)
+LuaTele.sendText(msg.chat_id,msg.id,"["..JsonSInfo['success'].."]","md",true)
+end
+end
+end
+end
 if text == "خيروك" or text == "لو خيروك" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
 local texting = {
