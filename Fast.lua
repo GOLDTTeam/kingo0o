@@ -13319,32 +13319,6 @@ local texting = {
 return LuaTele.sendText(msg_chat_id,msg_id,texting[math.random(#texting)],'md')
 end
 end
-if text == "نصيحه" or text == "اعمل اي" then
-if Redis:get(Fast.."Status:Games"..msg.chat_id) then
-local texting = {
-"ارسل لي اخر كتاب اشتريته",
-"اخبر والدك انك تحبه",
-"ارسل رساله لصديقك المفضل انك حزين واخبرني رد فعله",
-"اخبرني اسم شخص قلبك يحبه",
-"اسأل والدتك اذا كانت تحتاج مساعده ولا لا",
-"قل احبك في تسجيل صوتي وابعتها لخمسه من صحابك",
-"ارسل لي اسم فيلم",
-"ارسل لي اسم اغنيه",
-"ارسل لي ايه قرانيه",
-"اخبرني سرا",
-"من اكثر شخص تكره",
-"ماهو نوع هاتفك",
-"ماهو باسورد حساب الفيسبوك بتاعك",
-"قولي اسوء موقف مررت به",
-"رتب غرفتك",
-"هل تحبني ام لا",
-"من هو ممثلك المفضل",
-"مين افضل محمد صلاح ولا ميسي",
-"ماهي لعبتك المفضله",
-}
-return LuaTele.sendText(msg_chat_id,msg_id,texting[math.random(#texting)],'md')
-end
-end 
 if text == "صراحه" or text == "جرأه" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
 local texting = {
