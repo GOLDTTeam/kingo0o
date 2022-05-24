@@ -13296,14 +13296,14 @@ if not msg.Manger then
 return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
 end
 Redis:del(Fast.."smsme"..msg.chat_id)
-send(msg.chat_id,msg.id,"❍ تم تفعيل سمسمي")
+return send(msg.chat_id,msg.id,"❍ تم تفعيل سمسمي")
 end
 if text == "تعطيل سمسمي" then
 if not msg.Manger then
 return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
 end
 Redis:set(Fast.."smsme"..msg.chat_id,true)
-send(msg.chat_id,msg.id,"❍ تم تعطيل سمسمي")
+return send(msg.chat_id,msg.id,"❍ تم تعطيل سمسمي")
 end
 if not Redis:get(Fast.."smsme"..msg.chat_id) then
 if text and msg.reply_to_message_id ~= 0 then
@@ -15738,7 +15738,7 @@ local TextHelp = [[*
 ⬇️╿ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs
 ▬▭▬▭▬▭▬▭▬▭▬
 ◾️╿🄰 ➲ اوامر الحمايه .
-◾️╿🄱 ➲ اوامر الادمنيه .
+◾️╿?? ➲ اوامر الادمنيه .
 ◾️╿🄲 ➲ اوامر المدراء .
 ◾️╿🄳 ➲ اوامر المنشئين .
 ◾️╿🄴 ➲ اوامر المطورين .
