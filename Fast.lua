@@ -11118,45 +11118,24 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/SOo_KING/688"
-local T =[[
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [🚨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝘤𝘳𝘪𝘴𝘵𝘪𝘯](t.me/cristin_so)
-
- [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/cristin_so)
- 
- [⚡╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/cristin_so)
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
- [◍ 𝐶𝐻 " 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 •💲• 𝘚𝘖𝘜𝘙𝘊𝘌 ◍](t.me/cristin_so)
- ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-]]
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' then
+video = "https://t.me/SOo_KING/666"
+local Name = '** [ ❲ ‹ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙺𝙸𝙽𝙶 ›❳](t.me/SOo_KING)*\n\n* [ ❲ ‹𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆›❳](t.me/SOo_KING)*\n* [ ❲ ‹𝚃𝙷𝙴𝚂𝚃𝚁𝙾𝙽𝙶𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙸𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼›❳](t.me/SOo_KING)*\n*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = '• ¹𝘋𝘌𝘝 •', url = "https://t.me/dev_criss"},{text = '• ²𝘋𝘌𝘝 •', url = "https://t.me/bar_lo0o0"}
-},
-{
-{text = 'ঌ ¹ • ʙᴏᴛ ঌ', url = "https://t.me/Anossnn_bot"},{text = 'ঌ ² • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
-},
-{
-{text = '• ³𝘋𝘌𝘝 •', url = "https://t.me/Amr_sabry_1"},{text = 'ঌ ³ • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
-},
-{
-{text = '⧫ 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 • 𝘚𝘖𝘜𝘙𝘊𝘌 ⧫', url = "https://t.me/cristin_so"}
-},
+{{text = '⚶ ͟͟͞͞➳·𝐷𝐸𝑉.↺⚶',url="https://t.me/TR_E2S_ON_MY_MOoN"},{text ='⚶ᯓ˚₊·𝐵𝑂𝑇.↺⚶',url="https://t.me/KkINGg701_bot"}},
+{{text = '⚶ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺⚶', url="https://t.me/SOo_KING/408"}},
 }
-local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local msgg = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
-if not msg.Admin then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(7)..'* ',"md",true)  
+if not msg.Addictive then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*♕ هاذا الامر يخص⦗ '..Controller_Num(7)..' ⦘* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local chinfo = Redis:get(Fast.."ch:admin")
+local chinfo = data_ns:get(ban_ns.."ch:admin")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = chinfo}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n⋆ عليك الاشتراك في قناة البوت لاستخدام الاوامر*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n♕ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
@@ -13145,7 +13124,7 @@ name = string.gsub(name,"سوريا","https://t.me/kinggoo71/21")
 name = string.gsub(name,"الغدارين","https://t.me/kinggoo71/22")
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg.chat_id.."&photo="..name.."&caption="..URL.escape("اسرع واحد يقول اسم هذا الدوله").."&reply_to_message_id="..(msg.id/2097152/0.5))
 end
-en
+end
 if text == "معاني" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
 Redis:del(Fast.."Set:Maany"..msg.chat_id)
@@ -15707,7 +15686,7 @@ Redis:set(Fast.."Get:Reides:Commands:Group"..ChatId..":"..'اس', 'رفع منش
 Redis:sadd(Fast.."Command:List:Group"..ChatId,"اس")
 Redis:set(Fast.."Get:Reides:Commands:Group"..ChatId..":"..'مط','رفع مطور')
 Redis:sadd(Fast.."Command:List:Group"..ChatId,"مط")
-Redis:set(Fast.."Get:Reides:Commands:Group"..ChatId..":"..'ثانوي','رفع مطور ثانوي')
+Redis:set(Fast.."Get:Reides:Commands:Group"..ChatId..":"..'ثانوي','رفع كينج')
 Redis:sadd(Fast.."Command:List:Group"..ChatId,"ثانوي")
 Redis:set(Fast.."Get:Reides:Commands:Group"..ChatId..":"..'تك','تنزيل الكل')
 Redis:sadd(Fast.."Command:List:Group"..ChatId,"تك")
@@ -15736,7 +15715,7 @@ local txxt = [[
 ⋆  رفع منشى - من .
 ⋆  رفع منشئ الاساسي - اس  .
 ⋆  رفع مطور - مط .
-⋆ رفع مطور ثانوي - ثانوي .
+⋆ رفع كينج - ثانوي .
 ⋆  تنزيل الكل - تك .
 ⋆  تعطيل الايدي بالصوره - تعط .
 ⋆  تفعيل الايدي بالصوره - تفع .
