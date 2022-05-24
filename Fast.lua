@@ -14005,7 +14005,7 @@ if not msg.Manger then
 return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
 end
 Redis:del(Fast.."smsme"..msg.chat_id)
-send(msg.chat_id,msg.id,"❍ تم تفعيل سمسمي")
+return LuaTele.sendText(msg.chat_id,msg.id,"❍ تم تفعيل سمسمي")
 end
 if text == "تعطيل سمسمي" then
 if not msg.Manger then
