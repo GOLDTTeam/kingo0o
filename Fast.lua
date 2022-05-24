@@ -13144,10 +13144,8 @@ name = string.gsub(name,"السودان","https://t.me/kinggoo71/20")
 name = string.gsub(name,"سوريا","https://t.me/kinggoo71/21")
 name = string.gsub(name,"الغدارين","https://t.me/kinggoo71/22")
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg.chat_id.."&photo="..name.."&caption="..URL.escape("اسرع واحد يقول اسم هذا الدوله").."&reply_to_message_id="..(msg.id/2097152/0.5))
-return LuaTele.sendText(msg_chat_id,msg_id,"⋆ اسرع واحد يرسل اسم الدولة ~ {"..name.."}","md",true)  
 end
-end
-
+en
 if text == "معاني" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
 Redis:del(Fast.."Set:Maany"..msg.chat_id)
