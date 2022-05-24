@@ -13208,6 +13208,12 @@ KlamSpeed = {"شوان","سام","ايد شيرين","جاستين","اريان�
 name = KlamSpeed[math.random(#KlamSpeed)]
 Redis:set(Fast.."mshaher"..msg.chat_id,name)
 name = string.gsub(name,"شوان","https://t.me/HC6HH/8")
+name = string.gsub(name,"هبه مجدي","https://t.me/kinggoo71/27")
+name = string.gsub(name,"روبي","https://t.me/kinggoo71/29")
+name = string.gsub(name,"نانسي عجرم","https://t.me/kinggoo71/30")
+name = string.gsub(name,"مني ذكي","https://t.me/kinggoo71/33")
+name = string.gsub(name,"ايتن عامر","https://t.me/kinggoo71/34")
+name = string.gsub(name,"سميه خشاب","https://t.me/kinggoo71/25")
 name = string.gsub(name,"احمد فكري","https://t.me/kinggoo71/24")
 name = string.gsub(name,"سام","https://t.me/HC6HH/7")
 name = string.gsub(name,"سام سميث","https://t.me/HC6HH/7")
@@ -13232,7 +13238,7 @@ name = string.gsub(name,"بابلو","https://t.me/HC6HH/17")
 name = string.gsub(name,"ابيو","https://t.me/HC6HH/20")
 name = string.gsub(name,"شيرين","https://t.me/HC6HH/21")
 name = string.gsub(name,"نانسي عجرم","https://t.me/HC6HH/22")
-name = string.gsub(name,"كين","https://t.me/SOo_KING/688")
+name = string.gsub(name,"كينج","https://t.me/SOo_KING/688")
 name = string.gsub(name,"هيرو","https://t.me/SOo_KING/559")
 name = string.gsub(name,"محمد رمضان","https://t.me/HC6HH/25")
 name = string.gsub(name,"احمد حلمي","https://t.me/HC6HH/26")
@@ -13313,6 +13319,32 @@ local texting = {
 return LuaTele.sendText(msg_chat_id,msg_id,texting[math.random(#texting)],'md')
 end
 end
+if text == "نصيحه" or text == "اعمل اي" then
+if Redis:get(Fast.."Status:Games"..msg.chat_id) then
+local texting = {
+"ارسل لي اخر كتاب اشتريته",
+"اخبر والدك انك تحبه",
+"ارسل رساله لصديقك المفضل انك حزين واخبرني رد فعله",
+"اخبرني اسم شخص قلبك يحبه",
+"اسأل والدتك اذا كانت تحتاج مساعده ولا لا",
+"قل "احبك" في تسجيل صوتي وارسلها الي خمسة من اصحابك",
+"ارسل لي اسم فيلم",
+"ارسل لي اسم اغنيه",
+"ارسل لي ايه قرانيه",
+"اخبرني سرا",
+"من اكثر شخص تكره",
+"ماهو نوع هاتفك",
+"ماهو باسورد حساب الفيسبوك بتاعك",
+"قولي اسوء موقف مررت به",
+"رتب غرفتك",
+"هل تحبني ام لا",
+"من هو ممثلك المفضل",
+"مين افضل محمد صلاح ولا ميسي",
+"ماهي لعبتك المفضله",
+}
+return LuaTele.sendText(msg_chat_id,msg_id,texting[math.random(#texting)],'md')
+end
+end 
 if text == "صراحه" or text == "جرأه" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
 local texting = {
