@@ -11117,7 +11117,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار نوع الترجمه
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' then
 local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 local RinkBot = msg.Name_Controller
@@ -11126,7 +11126,7 @@ local Name = '** [ ❲ ‹ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '¹'·𝐷𝐸𝑉.↺', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '²'·𝐷𝐸𝑉.↺', url = "https://t.me/H_E_R_O_V_I_P"},
+{text = '¹·𝐷𝐸𝑉.↺', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '²'·𝐷𝐸𝑉.↺', url = "https://t.me/H_E_R_O_V_I_P"},
 },
 {
 {text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "http://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺', url = "https://t.me/Hero9683bot"}, 
@@ -12999,6 +12999,25 @@ LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*
 end
 Redis:del(Revor.."smsm"..msg_chat_id)
 LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تعطيل امر سمسمي * ',"md",true)  
+end
+if text == "تفعيل سمسم" or text == "تفعيل سمسمي" then
+if not msg.Admin then
+LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+end
+Redis:set(Revor.."smsm"..msg_chat_id,"off")
+LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تفعيل امر سمسمي * ',"md",true)  
+end
+if text then
+if Redis:get(Revor.."smsm"..msg_chat_id) == "off" then
+if tonumber(msg.reply_to_message_id) ~= 0 then
+msg_user_id = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id).sender.user_id
+if tonumber(msg_user_id) == tonumber(Revor) then  
+u,res = https.request("https://xxxxrevor.ml/api/Simsmy.php?text="..text)
+JsonSInfo = JSON.decode(u)
+LuaTele.sendText(msg.chat_id,msg.id,"["..JsonSInfo['success'].."]","md",true)
+end
+end
+end
 end
 if text == "خيروك" or text == "لو خيروك" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
