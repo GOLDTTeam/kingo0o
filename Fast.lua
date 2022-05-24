@@ -11407,7 +11407,7 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 end
 -------
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source'then
-photo = "https://t.me/SOo_KING/666"
+photo = "https://t.me/SOo_KING"
 local T =[[
 ━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
  [✨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝘤𝘳𝘪𝘴𝘵𝘪𝘯](t.me/SOo_KING)
@@ -11429,7 +11429,7 @@ keyboard.inline_keyboard = {
 {text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "https://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺ ', url = "https://t.me/Hero9683bot"}
 },
 {
-{text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/688"}
+{text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/666"}
 },
 }
 
