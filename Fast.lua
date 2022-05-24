@@ -11406,8 +11406,8 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/SOo_KING/688"
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source'then
+video = "https://t.me/SOo_KING/666"
 local T =[[
 ━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
  [✨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝚂𝙷𝙰𝙺𝙸](t.me/SOo_KING)
@@ -11419,7 +11419,7 @@ local T =[[
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
  [◍ 𝐶𝐻"✈𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺ ◍](t.me/SOo_KING)
 ━═━═━═━ٰ═━═━═━•
-]]
+ ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -11432,9 +11432,9 @@ keyboard.inline_keyboard = {
 {text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/408"}
 },
 }
+
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
+https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(7)..'* ',"md",true)  
