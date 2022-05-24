@@ -1545,6 +1545,288 @@ Redis:sadd(Fast.."All:Command:List:Group",text)
 Redis:del(Fast.."All:Command:Reids:Group:End"..msg_chat_id..":"..msg.sender.user_id)
 return LuaTele.sendText(msg_chat_id,msg_id,"• تم حفظ الامر باسم ← { "..text..' }',"md",true)
 end
+if text == 'هاي' or text == 'هيي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*خالتك جرت ورايا 😹💔*',"md",true)  
+end
+if text == 'سلام عليكم' or text == 'السلام عليكم' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*وعليكم السلام 🌝💜*',"md",true)  
+end
+if text == 'سلام' or text == 'مع سلامه' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*مع الف سلامه يقلبي متجيش تاني 😹💔🎶*',"md",true)  
+end
+if text == 'برايفت' or text == 'تع برايفت' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*خدوني معاكم برايفت والنبي 🥺💔*',"md",true)  
+end
+if text == 'النبي' or text == 'صلي علي النبي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*عليه الصلاه والسلام 🌝💛*',"md",true)  
+end
+if text == 'نعم' or text == 'يا نعم' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*نعم الله عليك 🌚❤️*',"md",true)  
+end
+if text == '🙄' or text == '🙄🙄' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'* نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️*',"md",true)  
+end
+if text == '🙄' or text == '🙄🙄' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️*',"md",true)  
+end
+if text == '😂' or text == '😂😂' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*ضحكتك عثل زيكك ينوحيي 🌝❤️*',"md",true)  
+end
+if text == '😹' or text == '😹' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*ضحكتك عثل زيكك ينوحيي 🌝❤️*',"md",true)  
+end
+if text == '🤔' or text == '🤔🤔' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'* بتفكر في اي 🤔*',"md",true)  
+end
+if text == '🌚' or text == '🌝' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*القمر ده شبهك 🙂❤️*',"md",true)  
+end
+if text == '💋' or text == '💋💋' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*انا عايز مح انا كمان 🥺💔*',"md",true)  
+end
+if text == '😭' or text == '😭😭' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*بتعيط تيب لي طيب ??*',"md",true)  
+end
+if text == '🥺' or text == '🥺🥺' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*متزعلش بحبك 😻🤍*',"md",true)  
+end
+if text == '😒' or text == '😒😒' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*عدل وشك ونت بتكلمني 😒🙄*',"md",true)  
+end
+if text == 'بحبك' or text == 'حبق' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*وانا كمان بعشقك يا روحي 🤗🥰*',"md",true)  
+end
+if text == 'مح' or text == 'هات مح' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*محات حياتي يروحي 🌝❤️*',"md",true)  
+end
+if text == 'هلا' or text == 'هلا وغلا' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*هلا بيك ياروحي 👋*',"md",true)  
+end
+if text == 'هشش' or text == 'هششخرص' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*بنهش كتاكيت احنا هنا ولا اي 🐣😹*',"md",true)  
+end
+if text == 'الحمد الله' or text == 'بخير الحمد الله' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*دايما ياحبيبي 🌝❤️*',"md",true)  
+end
+if text == 'بف' or text == 'بص بف' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*وحيات امك ياكبتن خدوني معاكو بيف 🥺💔*',"md",true)  
+end
+if text == 'خاص' or text == 'بص خاص' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*ونجيب اشخاص 😂👻*',"md",true)  
+end
+if text == 'صباح الخير' or text == 'مساء الخير' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*انت الخير يعمري 🌝❤️*',"md",true)  
+end
+if text == 'صباح النور' or text == 'باح الخير' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*صباح العسل 😻🤍*',"md",true)  
+end
+if text == 'حصل' or text == 'حثل' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*خخخ امال 😹*',"md",true)  
+end
+if text == 'اه' or text == 'اها' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*اه اي يا قدع عيب 😹💔*',"md",true)  
+end
+if text == 'كسم' or text == 'كسمك' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*عيب ياوسخ 🙄💔*',"md",true)  
+end
+if text == 'بوتي' or text == 'يا بوتي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'روح وعقل بوتك 🥺💔',"md",true)  
+end
+if text == 'متيجي' or text == 'تع' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*لا عيب بتكسف 😹💔*',"md",true)  
+end
+if text == 'هيح' or text == 'لسه صاحي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*صح النوم 😹💔*',"md",true)  
+end
+if text == 'منور' or text == 'نورت' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*ده نورك ي قلبي 🌝💙*',"md",true)  
+end
+if text == 'باي' or text == 'انا ماشي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*ع فين لوين رايح وسايبنى 🥺💔*',"md",true)  
+end
+if text == 'ويت' or text == 'ويت يحب' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*اي الثقافه دي 😒😹*',"md",true)  
+end
+if text == 'خخخ' or text == 'خخخخخ' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*اهدا يوحش ميصحش كدا 😒😹*',"md",true)  
+end
+if text == 'شكرا' or text == 'مرسي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*العفو ياروحي 🙈🌝*',"md",true)  
+end
+if text == 'حلوه' or text == 'حلو' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*انت الي حلو ياقمر 🤤🌝*',"md",true)  
+end
+if text == 'بموت' or text == 'هموت' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*موت بعيد م ناقصين مصايب 😑😂*',"md",true)  
+end
+if text == 'اي' or text == 'ايه' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*جتك اوهه م سامع ولا ايي 😹👻*',"md",true)  
+end
+if text == 'طيب' or text == 'تيب' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*فرح خالتك قريب 😹💋💃🏻*',"md",true)  
+end
+if text == 'حاضر' or text == 'حتر' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*حضرلك الخير يارب 🙂❤️*',"md",true)  
+end
+if text == 'جيت' or text == 'انا جيت' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'* لف ورجع تانى مشحوار 😂🚶‍♂👻*',"md",true)  
+end
+if text == 'بخ' or text == 'عو' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*يوه خضتني ياسمك اي 🥺💔*',"md",true)  
+end
+if text == 'حبيبي' or text == 'حبيبتي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*اوه ياه 🌝😂*',"md",true)  
+end
+if text == 'تمام' or text == 'تمم' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'* امك اسمها احلام 😹😹*',"md",true)  
+end
+if text == 'خلاص' or text == 'خلص' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*خلصتت روحكك يبعيد 😹💔*',"md",true)  
+end
+if text == 'سي في' or text == 'سيفي' then
+if not Redis:get(Fast.."rb:bna"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
+end
+return LuaTele.sendText(msg_chat_id,msg_id,'*كفيه شقط سيب حاجه لغيرك 😎😂*',"md",true)  
+end
 if text then if text:match("^all (.*)$") or text:match("^@all (.*)$") or text == "@all" or text == "all" or text == "نداء" then 
 local ttag = text:match("^all (.*)$") or text:match("^@all (.*)$") 
 if not msg.Manger then
@@ -5523,6 +5805,10 @@ end
 Redis:set(Fast.."Status:Id"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"⋆ تم تفعيل الايدي ","md",true)
 end
+if TextMsg == 'ردود السورس' then
+Redis:set(Fast.."rb:bna"..msg_chat_id,true) 
+return LuaTele.sendText(msg_chat_id,msg_id,"♕ تم تفعيل ردود السورس ","md",true)
+end
 if TextMsg == 'الايدي بالصوره' then
 if not msg.Manger then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(6)..'* ',"md",true)  
@@ -9369,6 +9655,9 @@ data = {
 {text = 'تعطيل الترحيب', data = msg.sender.user_id..'/'.. 'unmute_welcome'},{text = 'تفعيل الترحيب', data = msg.sender.user_id..'/'.. 'mute_welcome'},
 },
 {
+{text = 'تعطيل ردود السورس', data = msg.sender.user_id..'/'.. 'rb:bna_ban'},{text = 'تفعيل ردود السورس', data = msg.sender.user_id..'/'.. 'rb:bna_bian'},
+},
+{
 {text = 'اتعطيل الايدي', data = msg.sender.user_id..'/'.. 'unmute_Id'},{text = 'اتفعيل الايدي', data = msg.sender.user_id..'/'.. 'mute_Id'},
 },
 {
@@ -9917,7 +10206,158 @@ Redis:del(Fast.."Special:Group"..msg_chat_id)
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"تم مسح جميع رتب المجموعه \nالمنشئين الاساسيين \nالمنشئين\nالمدراء\nالادمنيه\nالمميزين","md",true)
 end
-
+if text == 'الكينج ' or text == 'كينج ' or text == 'المبرمج' then  
+local UserId_Info = LuaTele.searchPublicChat("TR_E2S_ON_MY_MOoN")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers KING\n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "\n ♕*𝐃𝐄𝐕 𝐍𝐀𝐌𝐄* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *𝐃𝐄𝐕 𝐁𝐈𝐎* : ["..Bio.." ]\n"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "\n ♕*𝐃𝐄𝐕 𝐍𝐀𝐌𝐄* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..") \n♕ *𝐃𝐄𝐕 𝐁𝐈𝐎* : ["..Bio.." ]\n"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
+if text == 'مالك السورسات' or text == 'المبرمج كينج' or text == 'مبرمج السورس' then  
+local UserId_Info = LuaTele.searchPublicChat("TR_E2S_ON_MY_MOoN")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(5555555555)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+local czczh = ' '..ban.first_name..' '
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ ‹ ⚶ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺⚶ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = czczh, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "  ❲ ‹ ⚶ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺⚶ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = czczh, url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
+if text == 'خيا كينج' or text == 'هيرو' or text == 'احمد' then  
+local UserId_Info = LuaTele.searchPublicChat("H_E_R_O_V_I_P")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ ‹ 𓆩 الـغـشيـم 𓆪‌‌‏ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "  ❲ ‹ ⚶ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺⚶ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
+text == 'الكينج' or text == 'كينج' or text == 'المبرمج الكينج' then  
+local UserId_Info = LuaTele.searchPublicChat("TR_E2S_ON_MY_MOoN")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ ‹ 𓆩 صـاحـب الـعـظمـهةة 𓆪‌‌‏ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "  ❲ ‹ ⚶ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺⚶ ›❳\n— — — — — — — — —\n ♕*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n♕ *Dev Bio* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
 
 if text == 'لقبي'  then
 Ge = https.request("https://api.telegram.org/bot".. Token.."/getChatMember?chat_id=" .. msg_chat_id .. "&user_id=" ..msg.sender.user_id)
@@ -11118,26 +11558,34 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/K_Y_O_G_A/215"
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' then
+photo = "https://t.me/SOo_KING/688"
 local T =[[
-•━═━═━═━ٰٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼   ═━═━═━•
-᥀ [ٓ⁨⌯ 𝙎َ𝙊ٰ𝙐ِِ𝖱ٰ𝘾ٌ𝙀 ٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼 ˹🕷️🔥˼⁩](t.me/O_U_C)
-᥀ [ٓ𝑮𝑹𝑶𝑼𝑷 𝑻𝑾𝑺](t.me/K_Y_O_G_A)
-᥀ [ٓ𝑅𝓲𝓞](t.me/Y_U_A_R)
-᥀ [ٓٓٓ𝘽ٰ𝘼ِ𝖱ٌِ𝙇𝙊ٰ](t.me/bar_lo0o0)
-᥀ [ٓٓٓ𝙂ٓ8ٰ𝘼ٓ𝙕ٰ𝘼ٰ𝘼ٌِ𝙇](t.me/G8AZAAL)
-•━═━═━═━ٰٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼   ═━═━═━•
- [ٓٓٓ⁨⌯ 𝙎َ𝙊ٰ𝙐ِِ𝖱ٰ𝘾ٌ𝙀 ٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼 ˹🕷️🔥˼⁩](t.me/O_U_C)
+━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
+ [✨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝘤𝘳𝘪𝘴𝘵𝘪𝘯](t.me/SOo_KING)
+
+ [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/SOo_KING)
+ 
+ [⚡╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/SOo_KING)
+━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+ [◍ 𝐶𝐻"✈𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺ ◍](t.me/SOo_KING)
+ ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'أضـف البـوت الـي مجـموعـتـك ✅', url = 't.me/'..UserBot..'?startgroup=new'},
+{text = '• ¹·𝐷𝐸𝑉.↺ •', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '• ²·𝐷𝐸𝑉.↺ •', url = "https://t.me/H_E_R_O_V_I_P"}
+},
+{
+{text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "https://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺ ', url = "https://t.me/Hero9683bot"}
+},
+{
+{text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/408"}
 },
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(7)..'* ',"md",true)  
@@ -12994,29 +13442,31 @@ name = string.gsub(name,"جسر","ر ج س")
 return LuaTele.sendText(msg_chat_id,msg_id,"⋆ اسرع واحد يرتبها ~ {"..name.."}","md",true)  
 end
 end
-if text == "تعطيل سمسمي" or text == "تعطيل سمسم" then
-if not msg.Admin then
-LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤??*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+if text == "تفعيل سمسمي" then
+if not msg.Manger then
+return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
 end
-Redis:del(Fast.."smsm"..msg_chat_id)
-LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تعطيل امر سمسمي * ',"md",true)  
+Redis:del(Fast.."smsme"..msg.chat_id)
+send(msg.chat_id,msg.id,"❍ تم تفعيل سمسمي")
 end
-if text == "تفعيل سمسم" or text == "تفعيل سمسمي" then
-if not msg.Admin then
-LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+if text == "تعطيل سمسمي" then
+if not msg.Manger then
+return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
 end
-Redis:set(Fast.."smsm"..msg_chat_id,"off")
-LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تفعيل امر سمسمي * ',"md",true)  
+Redis:set(Fast.."smsme"..msg.chat_id,true)
+send(msg.chat_id,msg.id,"❍ تم تعطيل سمسمي")
 end
-if text then
-if Redis:get(Fast.."smsm"..msg_chat_id) == "off" then
-if tonumber(msg.reply_to_message_id) ~= 0 then
-msg_user_id = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id).sender.user_id
-if tonumber(msg_user_id) == tonumber(Revor) then  
-u,res = https.request("https://xxxxrevor.ml/api/Simsmy.php?text="..text)
-JsonSInfo = JSON.decode(u)
-LuaTele.sendText(msg.chat_id,msg.id,"["..JsonSInfo['success'].."]","md",true)
+if not Redis:get(Fast.."smsme"..msg.chat_id) then
+if text and msg.reply_to_message_id ~= 0 then
+local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
+if Message_Reply and Message_Reply.sender and tonumber(Message_Reply.sender.user_id) == tonumber(Fast) then
+ai_text = https.request("https://ayad-12.xyz/sm.php?text="..URL.escape(text))
+if ai_text:match("(.*)سناب(.*)") or ai_text:match("(.*)واتس(.*)") or ai_text:match("(.*)انستا(.*)") or ai_text:match("(.*)رقمي(.*)") or ai_text:match("(%d+)") or ai_text:match("(.*)متابعه(.*)") or ai_text:match("(.*)تابعني(.*)") or ai_text:match("(.*)قناتي(.*)") or ai_text:match("(.*)قناه(.*)") or ai_text:match("(.*)يوتيوب(.*)") then
+txx = "لا افهمك"
+else
+txx = ai_text
 end
+send(msg_chat_id,msg_id,txx,"md")
 end
 end
 end
