@@ -11409,13 +11409,13 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source'then
 video = "https://t.me/SOo_KING/666"
 local T =[[
-━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
+━═━═━═━ٰ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺═━═━═━•
  [✨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚃𝚂𝙷𝙰𝙺𝙸](t.me/SOo_KING)
 
  [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/SOo_KING)
  
  [⚡╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/SOo_KING)
-━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
+━═━═━═━ٰ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺═━═━═━•
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
  [◍ 𝐶𝐻"✈𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺ ◍](t.me/SOo_KING)
 ━═━═━═━ٰ═━═━═━•
@@ -13208,6 +13208,7 @@ KlamSpeed = {"شوان","سام","ايد شيرين","جاستين","اريان�
 name = KlamSpeed[math.random(#KlamSpeed)]
 Redis:set(Fast.."mshaher"..msg.chat_id,name)
 name = string.gsub(name,"شوان","https://t.me/HC6HH/8")
+name = string.gsub(name,"احمد فكري","https://t.me/kinggoo71/24")
 name = string.gsub(name,"سام","https://t.me/HC6HH/7")
 name = string.gsub(name,"سام سميث","https://t.me/HC6HH/7")
 name = string.gsub(name,"ايد شيرين","https://t.me/HC6HH/6")
