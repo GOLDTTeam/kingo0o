@@ -11117,23 +11117,35 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار نوع الترجمه
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' 'then'
-local user_info = LuaTele.getUser(msg.sender.user_id)
-local first_name = user_info.first_name
-local RinkBot = msg.Name_Controller
+-------
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 photo = "https://t.me/SOo_KING/688"
-local Name = '** [ ❲ ‹ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙺𝙸𝙽𝙶 ›❳](t.me/SOo_KING)*\n\n* [ ❲ ‹𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆›❳](t.me/SOo_KING)*\n* [ ❲ ‹𝚃𝙷𝙴𝚂𝚃𝚁𝙾𝙽𝙶𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙸𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼›❳](t.me/SOo_KING)*\n*'
+local T =[[
+╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+ [🚨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝘤𝘳𝘪𝘴𝘵𝘪𝘯](t.me/cristin_so)
+
+ [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/cristin_so)
+ 
+ [⚡╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/cristin_so)
+╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+ [◍ 𝐶𝐻 " 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 •💲• 𝘚𝘖𝘜𝘙𝘊𝘌 ◍](t.me/cristin_so)
+ ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '¹·𝐷𝐸𝑉.↺', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '²·𝐷𝐸𝑉.↺', url = "https://t.me/H_E_R_O_V_I_P"},
+{text = '• ¹𝘋𝘌𝘝 •', url = "https://t.me/dev_criss"},{text = '• ²𝘋𝘌𝘝 •', url = "https://t.me/bar_lo0o0"}
 },
 {
-{text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "http://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺', url = "https://t.me/Hero9683bot"}, 
+{text = 'ঌ ¹ • ʙᴏᴛ ঌ', url = "https://t.me/Anossnn_bot"},{text = 'ঌ ² • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
 },
 {
-{text = 'ᯓ˚₊·𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺', url = "https://t.me/SOo_KING"}, 
-}, 
+{text = '• ³𝘋𝘌𝘝 •', url = "https://t.me/Amr_sabry_1"},{text = 'ঌ ³ • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
+},
+{
+{text = '⧫ 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 • 𝘚𝘖𝘜𝘙𝘊𝘌 ⧫', url = "https://t.me/cristin_so"}
+},
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
