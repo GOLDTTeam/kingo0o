@@ -11519,7 +11519,7 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' then
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 photo = "https://t.me/SOo_KING/688"
 local T =[[
 ━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
@@ -11531,8 +11531,8 @@ local T =[[
 ━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
  [◍ 𝐶𝐻"✈𝑆𝑂𝑈𝑅𝐶𝐸 𝑇𝑆𝐻𝐴𝐾𝐼.↺ ◍](t.me/SOo_KING)
- ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-]]
+━═━═━═━ٰ═━═━═━•
+ ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -11542,11 +11542,12 @@ keyboard.inline_keyboard = {
 {text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "https://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺ ', url = "https://t.me/Hero9683bot"}
 },
 {
-{text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/408"}
+{text = '⧫ ᯓ˚₊· 𝑇𝑆𝐻𝐴𝐾𝐼.↺ • 𝑆𝑂𝑈𝑅𝐶𝐸 ⧫', url = "https://t.me/SOo_KING/408"},{text = 'أضـف البـوت الـي مجـموعـتـك ✅', url = 't.me/'..UserBot..'?startgroup=new"}
 },
 }
+
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(7)..'* ',"md",true)  
