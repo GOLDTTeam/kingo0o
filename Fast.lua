@@ -11406,7 +11406,7 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
 -------
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source'then
 photo = "https://t.me/SOo_KING/688"
 local T =[[
 ━═━═━═━ٰᯓ˚₊·𝑇𝑆𝐻𝐴𝐾𝐼.↺   ═━═━═━•
