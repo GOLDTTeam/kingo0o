@@ -11119,36 +11119,25 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار 
 end
 -------
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/SOo_KING/688"
+photo = "https://t.me/K_Y_O_G_A/215"
 local T =[[
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [🚨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝘤𝘳𝘪𝘴𝘵𝘪𝘯](t.me/cristin_so)
-
- [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/cristin_so)
- 
- [⚡╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/cristin_so)
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
- [◍ 𝐶𝐻 " 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 •💲• 𝘚𝘖𝘜𝘙𝘊𝘌 ◍](t.me/cristin_so)
- ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+•━═━═━═━ٰٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼   ═━═━═━•
+᥀ [ٓ⁨⌯ 𝙎َ𝙊ٰ𝙐ِِ𝖱ٰ𝘾ٌ𝙀 ٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼 ˹🕷️🔥˼⁩](t.me/O_U_C)
+᥀ [ٓ𝑮𝑹𝑶𝑼𝑷 𝑻𝑾𝑺](t.me/K_Y_O_G_A)
+᥀ [ٓ𝑅𝓲𝓞](t.me/Y_U_A_R)
+᥀ [ٓٓٓ𝘽ٰ𝘼ِ𝖱ٌِ𝙇𝙊ٰ](t.me/bar_lo0o0)
+᥀ [ٓٓٓ𝙂ٓ8ٰ𝘼ٓ𝙕ٰ𝘼ٰ𝘼ٌِ𝙇](t.me/G8AZAAL)
+•━═━═━═━ٰٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼   ═━═━═━•
+ [ٓٓٓ⁨⌯ 𝙎َ𝙊ٰ𝙐ِِ𝖱ٰ𝘾ٌ𝙀 ٰ𝙆ٍ𝙔𝙊ٰ𝙂ٰٓٓ𝘼 ˹🕷️🔥˼⁩](t.me/O_U_C)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• ¹𝘋𝘌𝘝 •', url = "https://t.me/dev_criss"},{text = '• ²𝘋𝘌𝘝 •', url = "https://t.me/bar_lo0o0"}
-},
-{
-{text = 'ঌ ¹ • ʙᴏᴛ ঌ', url = "https://t.me/Anossnn_bot"},{text = 'ঌ ² • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
-},
-{
-{text = '• ³𝘋𝘌𝘝 •', url = "https://t.me/Amr_sabry_1"},{text = 'ঌ ³ • ʙᴏᴛ ঌ', url = "https://t.me/barlo0o_bot"}
-},
-{
-{text = '⧫ 𝘊𝘙𝘐𝘚𝘛𝘐𝘕 • 𝘚𝘖𝘜𝘙𝘊𝘌 ⧫', url = "https://t.me/cristin_so"}
+{text = 'أضـف البـوت الـي مجـموعـتـك ✅', url = 't.me/'..UserBot..'?startgroup=new'},
 },
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(7)..'* ',"md",true)  
@@ -13007,7 +12996,7 @@ end
 end
 if text == "تعطيل سمسمي" or text == "تعطيل سمسم" then
 if not msg.Admin then
-LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤𓆩*'..Controller_Num(7)..'*𓆪بس',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'\n• هذا الامر يخص • ↤??*'..Controller_Num(7)..'*𓆪بس',"md",true)  
 end
 Redis:del(Fast.."smsm"..msg_chat_id)
 LuaTele.sendText(msg_chat_id,msg_id,'\n*• تم تعطيل امر سمسمي * ',"md",true)  
