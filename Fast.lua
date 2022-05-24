@@ -11117,7 +11117,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*• حسنا قم باختيار نوع الترجمه
 • وبعدها سوف اقوم بالترجمه*]],"md",false, false, false, false, reply_markup)
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' then
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس or text == 'source' then'
 local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 local RinkBot = msg.Name_Controller
