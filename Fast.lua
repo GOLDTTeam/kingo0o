@@ -13315,7 +13315,7 @@ txx = "لا افهمك"
 else
 txx = ai_text
 end
-send(msg_chat_id,msg_id,txx,"md")'
+'send''(msg_chat_id,msg_id,txx,"md")'
 end
 end
 end
