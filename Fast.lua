@@ -11126,7 +11126,7 @@ local Name = '** [ ❲ ‹ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '¹·𝐷𝐸𝑉.↺', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '²'·𝐷𝐸𝑉.↺', url = "https://t.me/H_E_R_O_V_I_P"},
+{text = '¹·𝐷𝐸𝑉.↺', url = "https://t.me/TR_E2S_ON_MY_MOoN"},{text = '²·𝐷𝐸𝑉.↺', url = "https://t.me/H_E_R_O_V_I_P"},
 },
 {
 {text = 'ᯓ˚₊¹·𝐵𝑂𝑇.↺', url = "http://t.me/KkINGg701_bot"},{text = 'ᯓ˚₊²·𝐵𝑂𝑇.↺', url = "https://t.me/Hero9683bot"}, 
