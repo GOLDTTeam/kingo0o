@@ -11718,7 +11718,7 @@ keyboard.inline_keyboard = {
 {text = Creator, url = 't.me/'..UserBot..'?start'}, 
 },
 {
-{text = '•·𝐷𝐸𝑉.↺ •', url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+{text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 }
 local msgg = msg_id/2097152/0.5
