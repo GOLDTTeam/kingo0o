@@ -1197,7 +1197,7 @@ for k,v in pairs(msg.content.member_user_ids) do
 local Info_User = LuaTele.getUser(v) 
 print(v)
 if v == tonumber(Fast) then
-local N = (Redis:get(Fast.."Name:Bot") or "جولد")
+local N = (Redis:get(Fast.."Name:Bot") or "تشاكي")
 photo = LuaTele.getUserProfilePhotos(Fast)
 local TextBot = '*• انا بوت اسمي '..N..'\n• وظيفتي حمايه المجموعة من السبام والتفليش الخ..\n• لتفعيل البوت البوت اكتب تفعيل او استعمل الازرار بالاسفل\n*'
 --[[
@@ -11689,26 +11689,81 @@ end
 Redis:del(Fast.."Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"⋆ تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(Fast.."Name:Bot") or "جولد") then
-local NamesBot = (Redis:get(Fast.."Name:Bot") or "جولد")
-local NameBots = {
-"قلب "..NamesBot ,
-"معاك",
-"نعم ؟",
-"قلبه"
-}
-return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
-end
-if text == "بوت" then
-local NamesBot = (Redis:get(Fast.."Name:Bot") or "جولد")
+if text == 'بوت' or text == 'البوت' then
+local photo = LuaTele.getUserProfilePhotos(Fast)
+local ban = LuaTele.getUser(Fast)
+local Namebot = (Redis:get(Fast.."Name:Bot") or "كينج")
 local BotName = {
-"اسمي "..NamesBot,
-"قلب البوت",
-"خير ؟"
+'اسمي  '..Namebot..' يا قلبي 🤤💚',
+'اسمي '..Namebot..' يا روحي🙈❤️',
+'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يا قمر 🐭🤍',
+'اسمي  '..Namebot..' يامزه 🥺❤️',
+'اسمي  '..Namebot..' يعم 😒',
+'مقولت اسمي '..Namebot..' في اي 🙄',
+'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
 }
-return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md",true)   
+NameBots = BotName[math.random(#BotName)]
+if ban.username then
+Creator = " "..ban.first_name.." "
+else
+Creator = " كينج\n"
 end
-
+local texxtt = ''..NameBots..''
+if photo.total_count > 0 then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = Creator, url = 't.me/'..UserBot..'?start'}, 
+},
+{
+{text = '•·𝐷𝐸𝑉.↺ •', url = "https://t.me/TR_E2S_ON_MY_MOoN"}
+},
+}
+{text = '➕ ضــيف آلبــــوت لج ــروبــــك ', url = 't.me/'..UserBot..'?startgroup=new'}, 
+},
+}
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&caption=".. URL.escape(NameBots).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
+if text == (Redis:get(Fast.."Name:Bot") or "كينج") then
+local photo = LuaTele.getUserProfilePhotos(Fast)
+local ban = LuaTele.getUser(Fast)
+local Namebot = (Redis:get(Fast.."Name:Bot") or "كينج")
+local BotName = {
+'اسمي  '..Namebot..' يا قلبي 🤤💚',
+'اسمي '..Namebot..' يا روحي🙈❤️',
+'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يا قمر 🐭🤍',
+'اسمي  '..Namebot..' يامزه 🥺❤️',
+'اسمي  '..Namebot..' يعم 😒',
+'مقولت اسمي '..Namebot..' في اي ??',
+'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
+}
+NameBots = BotName[math.random(#BotName)]
+if ban.username then
+Creator = " "..ban.first_name.." "
+else
+Creator = " كينج\n"
+end
+local texxtt = ''..NameBots..''
+if photo.total_count > 0 then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = Creator, url = 't.me/'..UserBot..'?start'}, 
+},
+{
+{text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
+},
+}
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&caption=".. URL.escape(NameBots).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
 if text == 'تنظيف المشتركين' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⋆ هذا الامر يخص  '..Controller_Num(1)..'* ',"md",true)  
@@ -13253,7 +13308,7 @@ end
 end
 if text == "الاسرع" or text == "ترتيب" then
 if Redis:get(Fast.."Status:Games"..msg.chat_id) then
-KlamSpeed = {"سحور","سياره","استقبال","قنفذ","ايفون","بزونه","مطبخ","كرستيانو","دجاجه","مدرسه","الوان","غرفه","ثلاجه","قهوه","سفينه","جولد","محطه","طياره","رادار","منزل","مستشفى","كهرباء","تفاحه","اخطبوط","سلمون","فرنسا","برتقاله","تفاح","مطرقه","كينج","لعبه","شباك","باص","سمكه","ذباب","تلفاز","حاسوب","انترنت","ساحه","جسر"};
+KlamSpeed = {"سحور","سياره","استقبال","قنفذ","ايفون","بزونه","مطبخ","كرستيانو","دجاجه","مدرسه","الوان","غرفه","ثلاجه","قهوه","سفينه","تشاكي","محطه","طياره","رادار","منزل","مستشفى","كهرباء","تفاحه","اخطبوط","سلمون","فرنسا","برتقاله","تفاح","مطرقه","كينج","لعبه","شباك","باص","سمكه","ذباب","تلفاز","حاسوب","انترنت","ساحه","جسر"};
 name = KlamSpeed[math.random(#KlamSpeed)]
 Redis:set(Fast.."Game:Monotonous"..msg.chat_id,name)
 name = string.gsub(name,"سحور","س ر و ح")
@@ -13261,7 +13316,7 @@ name = string.gsub(name,"سياره","ه ر س ي ا")
 name = string.gsub(name,"استقبال","ل ب ا ت ق س ا")
 name = string.gsub(name,"قنفذ","ذ ق ن ف")
 name = string.gsub(name,"ايفون","و ن ف ا")
-name = string.gsub(name,"جولد","ر و ف ر ي")
+name = string.gsub(name,"تشاكي","ر و ف ر ي")
 name = string.gsub(name,"مطبخ","خ ب ط م")
 name = string.gsub(name,"كرستيانو","س ت ا ن و ك ر ي")
 name = string.gsub(name,"دجاجه","ج ج ا د ه")
@@ -14055,7 +14110,7 @@ if text == '/start' or text == "رجـوع ⋆" then
 Redis:sadd(Fast..'Num:User:Pv',msg.sender.user_id)  
 if not msg.Devss then
 if not Redis:get(Fast.."Start:Bot") then
-local CmdStart = '\n⋄︙مرحبا انا بوت '..(Redis:get(Fast.."Name:Bot") or "جولد")..
+local CmdStart = '\n⋄︙مرحبا انا بوت '..(Redis:get(Fast.."Name:Bot") or "تشاكي")..
 '\n⋄︙اختصاصي حمايه المجموعات'..
 '\n⋄︙كما احتوي ايضا علي مميزات خدميه'..
 '\n⋄︙للتفعيل اضفني مشرف في مجموعتك'..
