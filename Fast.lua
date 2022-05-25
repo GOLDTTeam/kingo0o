@@ -11721,7 +11721,7 @@ keyboard.inline_keyboard = {
 {text = '•·𝐷𝐸𝑉.↺ •', url = "https://t.me/TR_E2S_ON_MY_MOoN"}
 },
 }
-{text = '➕ ضــيف آلبــــوت لج ــروبــــك ', url = 't.me/'..UserBot..'?startgroup=new'}, 
+{text = '➕ ضــيف آلبــــوت لج ــروبــــك', url = 't.me/'..UserBot..'?startgroup=new"}
 },
 }
 local msgg = msg_id/2097152/0.5
