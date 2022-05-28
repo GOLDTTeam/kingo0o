@@ -1,7 +1,7 @@
 #!/bin/bash
 cd $(cd $(dirname $0); pwd)
 echo -e '\e[1m\e[31m
-FDFGERB source is being installed, 
+Fast source is being installed, 
 Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
@@ -43,11 +43,11 @@ sudo luarocks install luasec
 sudo luarocks install luasocket
 cd ../..
 rm -rf tmp
-sudo lua5.3 FDFGERB.lua
+sudo lua5.3 Fast.lua
 ;;
 2)
 echo -e "\e[1m\e[32mجاري تشغيل البوت الان\e[0m"
 sleep 2
-sudo lua5.3 FDFGERB.lua
+sudo lua5.3 Fast.lua
 ;;
 esac
