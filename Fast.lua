@@ -170,9 +170,9 @@ StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 5194316700 then
 Status = 'مطور السورس'
 elseif UserId == 5151007856 then  
-Status = 'المبرمج كينج'
-elseif UserId == 5151007856 then  
-Status = 'مطور السورس'
+Status = '𝑫𝑬𝑽➼𝐾𝐼𝑁𝐺'
+elseif UserId == 5122340616 then  
+Status = '𝑁𝑂𝑁𝐴 ؛💘🥺'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == Fast then
@@ -958,8 +958,8 @@ msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 5194316700 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 5151007856 then
-msg.Name_Controller = 'مطور السورس '
+elseif tonumber(msg.sender.user_id) == 5122340616 then
+msg.Name_Controller = '𝑁𝑂𝑁𝐴 ؛💘🥺'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
@@ -6874,6 +6874,9 @@ end
 if UserId == "5151007856" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⋆ عذرآ لا تستطيع استخدام الامر على مطور السورس*","md",true)  
 end
+if UserId == "5122340616" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*⋆ عذرآ لا تستطيع استخدام الامر على مطور السورس*","md",true)  
+end
 local UserInfo = LuaTele.getUser(UserId)
 if UserInfo.luatele == "error" and UserInfo.code == 6 then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n⋆ عذرآ لا تستطيع استخدام ايدي خطأ ","md",true)  
@@ -7464,6 +7467,8 @@ end
 
 if text == "انا مين" then
 if msg.sender.user_id == tonumber(5194316700) then
+LuaTele.sendText(msg_chat_id,msg_id,"⋆ انت مطور السورس يقلبي🌚♥","md",true)
+if msg.sender.user_id == tonumber(5122340616) then
 LuaTele.sendText(msg_chat_id,msg_id,"⋆ انت مطور السورس يقلبي🌚♥","md",true)
 elseif msg.sender.user_id == tonumber(5151007856) then
 LuaTele.sendText(msg_chat_id,msg_id,"⋆ انت مطور السورس يقلبي🌚♥","md",true)
@@ -12860,7 +12865,7 @@ end
 end
 
 
-if text == "ريباك" or text == "بوت" then
+if text == "ريباك" or text == "بو" then
 LuaTele.sendText(msg.chat_id,msg.id, "نعم ؟","md",true)
 end
 if text == "توب" or text == "التوب" then
