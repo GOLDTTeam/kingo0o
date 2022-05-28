@@ -919,7 +919,6 @@ local msg_reply_id = msg.reply_to_message_id
 local msg_user_send_id = msg.sender.user_id
 local msg_id = msg.id
 --var(msg.content)
-end
 if data.sender.luatele == "messageSenderChat" and Redis:get(Fast.."Lock:channell"..msg_chat_id) then
 print(Redis:get(Fast.."chadmin"..msg_chat_id))
 print(data.sender.chat_id)
@@ -12866,7 +12865,7 @@ end
 end
 
 
-if text == "ريباك" or text == "بو" then
+if text == "ريباك" or text == "ريبوك" then
 LuaTele.sendText(msg.chat_id,msg.id, "نعم ؟","md",true)
 end
 if text == "توب" or text == "التوب" then
